@@ -1,0 +1,10 @@
+import './header.js';
+import './hero.js';
+import './gameDescription.js';
+import './FAQ.js';
+import './reviews.js';
+import './gallery.js';
+import './heroUpgradeTree.js';
+import './footer.js';
+import './page-2.js';
+import './page-3.js';
