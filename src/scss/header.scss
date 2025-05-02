@@ -32,37 +32,7 @@ color: #FFFFFF;
     
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #002f4b;
-  z-index: 9999;
-  display: none;
-  overflow-y: auto;
-}
 
-.mobile-menu.active {
-  display: block;
-}
-
-.mobile-menu-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding-top: 16px;
-}
-
-.nav-container {
-  margin-top: 24px;
-}
-
-/* Заборонити скрол головної сторінки */
-body.modal-open {
-  overflow: hidden;
-}
 
 
 
