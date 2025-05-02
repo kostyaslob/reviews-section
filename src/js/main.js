@@ -6,5 +6,7 @@ import './reviews.js';
 import './gallery.js';
 import './heroUpgradeTree.js';
 import './footer.js';
-import './page-2.js';
-import './page-3.js';
+import './privacy.js';
+import './terms.js';
+import './cookies.js';
+
