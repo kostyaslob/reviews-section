@@ -1,1 +1,69 @@
+.header-section {
+    position: fixed;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    
+.nav-list {
+    display: none;
+}
+    
+}
+.header-button {
+color: #FFFFFF;
+    width: 140px;
+    background-color: #376deb;
+    font-size: 16px;
+    border: none;
+    padding: 9px 34px;
+    
+    
+}
+.header-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 64px;
+    
+}
+.header-burger-icon {
+    fill: white;
+    margin-right: 16px;
+    
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #002f4b;
+  z-index: 9999;
+  display: none;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 16px;
+}
+
+.nav-container {
+  margin-top: 24px;
+}
+
+/* Заборонити скрол головної сторінки */
+body.modal-open {
+  overflow: hidden;
+}
+
+
+
 
