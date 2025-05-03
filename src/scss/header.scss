@@ -1,16 +1,17 @@
 .header-section {
-    position: fixed;
+    
     padding-top: 24px;
 }
 .header-container {
     display: flex;
     align-items: center;
+    // position: fixed;
     
+}
 .nav-list {
     display: none;
 }
     
-}
 .header-button {
 color: #FFFFFF;
     width: 140px;
@@ -32,39 +33,84 @@ color: #FFFFFF;
     margin-right: 16px;
     
 }
+.header-close-icon {
+    stroke: white;
+    margin-right: 16px;
+    
+}
 .mobile-menu {
   position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:#002434; /* Напівпрозорий фон */
-  z-index: 1000; /* Забезпечує відображення поверх усього іншого */
-  display: none; /* Спочатку приховано */
-  overflow: auto; /* Додає прокрутку, якщо контент не вміщається */
+  background-color:#002434; 
+  z-index: 1000; 
+  display: none; 
+  overflow: auto; 
+
 }
 
 .mobile-menu.is-open {
-  display: block; /* Відображає модальне вікно */
+  display: block; 
 }
 
 .mobile-menu-inner {
-  /* Додайте стилі для внутрішнього контенту, наприклад, padding, кольори, тощо */
-  padding: 24px 8px;
-  color: white; /* Зробіть текст білим, щоб він був видимий на темному фоні */
+ 
+  padding: 24px 0px;
+  color: white; 
+
 }
 
  .header-container-mob {
     padding-bottom: 16px;
+    // margin: 0;
+
  }
 .nav-container-mob {
     padding-top: 16px;
+    padding-left: 24px;
+    
+
 
 }
-.nav-item {
+.mob-nav-item {
     font-size: 16px;
     padding-bottom: 24px;
 }
 
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+  
+.header-container {
+       background-color: rgba(0, 36, 52, 0.8);
+   justify-content: space-between;
+    text-align: center;
+}
+.header-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
+.header-burger-icon {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+     
+}
+.header-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+}
+
+
+}
