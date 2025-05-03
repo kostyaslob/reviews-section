@@ -1,5 +1,6 @@
 .header-section {
     position: fixed;
+    padding-top: 24px;
 }
 .header-container {
     display: flex;
@@ -31,9 +32,39 @@ color: #FFFFFF;
     margin-right: 16px;
     
 }
+.mobile-menu {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#002434; /* Напівпрозорий фон */
+  z-index: 1000; /* Забезпечує відображення поверх усього іншого */
+  display: none; /* Спочатку приховано */
+  overflow: auto; /* Додає прокрутку, якщо контент не вміщається */
+}
 
+.mobile-menu.is-open {
+  display: block; /* Відображає модальне вікно */
+}
 
+.mobile-menu-inner {
+  /* Додайте стилі для внутрішнього контенту, наприклад, padding, кольори, тощо */
+  padding: 24px 8px;
+  color: white; /* Зробіть текст білим, щоб він був видимий на темному фоні */
+}
 
+ .header-container-mob {
+    padding-bottom: 16px;
+ }
+.nav-container-mob {
+    padding-top: 16px;
+
+}
+.nav-item {
+    font-size: 16px;
+    padding-bottom: 24px;
+}
 
 
 
