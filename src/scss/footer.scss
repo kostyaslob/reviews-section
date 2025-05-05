@@ -1,10 +1,11 @@
+// mobile styles
 .footer {
   min-width: 320px;
   max-width: 375px;
   height: 413px;
   background: url('../img/footermobile@1x.png');
   background-repeat: no-repeat;
-   background-size: cover;
+  background-size: cover;
 }
 @media (min-resolution: 2dppx) {
   .footer {
@@ -61,7 +62,14 @@
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
+@media only screen and (max-width: 1199px) {
+  .opshen-span {
+    display: block;
+  }
+}
+
+// desktop styles
+@media only screen and (min-width: 1200px) {
   .footer {
     max-width: 1200px;
     height: 294px;
@@ -72,31 +80,38 @@
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 48px 57px, 49px 58px, 48px 57px, 132px 72px, cover;
     background-position: bottom 2px right 200px, bottom 16px right 179px,
-      bottom 0px right 12px, bottom 30px left 126px, top 0 left 0;
+      bottom 0 right 12px, bottom 30px left 126px, top 0 left 0;
   }
-  @media (min-resolution: 2dppx) {
-    .footer {
-      background: url('../img/spare parts for the machine01@2x.png'),
-        url('../img/spare parts for the machine02@2x.png'),
-        url('../img/spare parts for the machine03@2x.png'),
-        url('../img/place for tower 2x.png'), url('../img/Footer@2x.png');
-      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-      background-size: 48px 57px, 49px 58px, 48px 57px, 132px 72px, cover;
-      background-position: bottom 2px right 200px, bottom 16px right 179px,
-        bottom 0px right 12px, bottom 30px left 126px, top 0 left 0;
-    }
-    .footer-title {
-      font-size: 60px;
-      max-width: 1200px;
-      height: 106px;
-      white-space: nowrap;
-    }
-    .footer-list{
-      flex-direction: row;
-    }
-    .footer-container{
-      display: flex;
-      flex-direction: row;
-    }
+
+  .footer-title {
+    font-size: 60px;
+    max-width: 1200px;
+    height: 106px;
+    margin-top: 77px;
+  }
+  .footer-span {
+    font-size: 96px;
+  }
+  .footer-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-container {
+    width: 1200px;
+    height: 294px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .footer {
+    background: url('../img/spare parts for the machine01@2x.png'),
+      url('../img/spare parts for the machine02@2x.png'),
+      url('../img/spare parts for the machine03@2x.png'),
+      url('../img/place for tower 2x.png'), url('../img/Footer@2x.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 48px 57px, 49px 58px, 48px 57px, 132px 72px, cover;
+    background-position: bottom 2px right 200px, bottom 16px right 179px,
+      bottom 0 right 12px, bottom 30px left 126px, top 0 left 0;
   }
 }
