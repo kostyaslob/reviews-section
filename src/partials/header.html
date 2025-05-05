@@ -82,15 +82,22 @@
 
 <section class="section hero-section">
   <div class="container hero-container">
+<picture>
+  <source srcset="../img/hero/hero-1x-desk.png 1x, ../img/hero/hero-2x-desk.png 2x" media="(min-width: 1200px)">
+  <source srcset="../img/hero/hero-1x-mob.png 1x, ../img/hero/hero-2x-mob.png 2x" media="(min-width: 320px)">
+  <img class="hero-main-picture" 
+    src="../img/hero/hero-1x-mob.png"
+    alt="Hero character woman" />
+</picture>
+    
 
-    <!-- <div class="hero-main-picture-container">
-    <img class="hero-main-picture" src="../img/hero/hero-1x-mob.png" />
-
-    </div> -->
-    <div class="hero-content-container">
+    <div class=" hero-content-container">
         <h1 class="hero-title">Heroes of <span class="hero-title-span">T</span>ower Defence Battle</h1>
    <p class="hero-subtitle">Strategize, Upgrade & Defend Your Base from Endless Waves!</p>
-   <button class="hero-button">Play know</button>
+   <button class="hero-button">
+        <a href="https://play.google.com/store/apps/details?id=heroes.tower.defence&hl=en&gl=us">Play now</a>
+
+   </button>
     </div>
   
   </div>
