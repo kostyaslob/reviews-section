@@ -63,7 +63,7 @@ color: #FFFFFF;
 }
 .header-modal {
   max-width: 320px;
-position: fixed;
+position: absolute;
   top: 50%; 
   left: 50%; 
   width: 100%;
@@ -74,10 +74,13 @@ position: fixed;
   display: none; 
   
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .header-modal::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -87,7 +90,7 @@ position: fixed;
    url("../img/hero/bg-sandstorm-cookie-mob.png");
   background-position: top 140px left 4px, top 137px left 0px; 
   background-repeat: no-repeat, no-repeat;
-  
+ 
   z-index: -1; 
 }
 

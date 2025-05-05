@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!cookiesAccepted) {
     modal.classList.add('is-open');
+    document.body.classList.add('modal-open');
   }
 
 
   acceptButton.addEventListener('click', function () {
     localStorage.setItem('cookiesAccepted', 'true');
     modal.classList.remove('is-open');
+    document.body.classList.remove('modal-open'); 
   });
 
  
