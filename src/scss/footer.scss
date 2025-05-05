@@ -6,13 +6,25 @@
   background: url('../img/footermobile@1x.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
 }
 @media (min-resolution: 2dppx) {
   .footer {
     background: url('../img/footermobile@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    text-align: center;
   }
+}
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0;
+  margin: 0 auto;
 }
 .footer-title {
   text-align: center;
@@ -56,11 +68,14 @@
   margin-top: 16px;
 }
 .footer-container {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 375px;
   height: 413px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 1199px) {
   .opshen-span {
@@ -81,6 +96,10 @@
     background-size: 48px 57px, 49px 58px, 48px 57px, 132px 72px, cover;
     background-position: bottom 2px right 200px, bottom 16px right 179px,
       bottom 0 right 12px, bottom 30px left 126px, top 0 left 0;
+  }
+  .container {
+    max-width: 1200px;
+    padding: 0;
   }
 
   .footer-title {
