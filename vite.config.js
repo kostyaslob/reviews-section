@@ -46,12 +46,12 @@ export default defineConfig(({ command }) => {
         },
       }),
     ],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: globalStylesOptions,
-        },
-      },
-    },
+    // css: {
+    //   preprocessorOptions: {
+    //     scss: {
+    //       additionalData: globalStylesOptions,
+    //     },
+    //   },
+    // },
   };
 });
