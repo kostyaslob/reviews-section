@@ -20,12 +20,12 @@
     text-align: center;
   }
 }
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  padding: 0;
-  margin: 0 auto;
-}
+// .container {
+//   min-width: 320px;
+//   max-width: 375px;
+//   padding: 0;
+//   margin: 0 auto;
+// }
 .footer-title {
   text-align: center;
   font-weight: 500;
@@ -75,7 +75,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 0;
 }
 @media only screen and (max-width: 1199px) {
   .opshen-span {
@@ -97,10 +97,7 @@
     background-position: bottom 2px right 200px, bottom 16px right 179px,
       bottom 0 right 12px, bottom 30px left 126px, top 0 left 0;
   }
-  .container {
-    max-width: 1200px;
-    padding: 0;
-  }
+  
 
   .footer-title {
     font-size: 60px;
@@ -119,6 +116,8 @@
   .footer-container {
     width: 1200px;
     height: 294px;
+    max-width: 1200px;
+    padding: 0 ;
   }
 }
 
