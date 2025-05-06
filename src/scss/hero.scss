@@ -2,12 +2,17 @@
 .hero-section {
   padding-top: 0;
   padding-bottom: 0;
+  
+margin: 0 auto;
  
 }
 
+
+
 .hero-container {
   min-height: 384px;
- max-width: 320px;
+  
+width: 100%;
 
   background-image: 
   url("../img/hero/hero-mob.png"),
@@ -42,9 +47,13 @@
   center;
    
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat;
-  background-size:  auto, auto, auto, 320px 242px, auto, auto, auto, auto, auto, 320px 118px, auto;
+  background-size:  auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto;
   
 }
+
+
+
+
 .hero-content-container {
   display: flex;
   flex-direction: column;
@@ -52,14 +61,7 @@
   justify-content: center;
   text-align: center;
 }
-.hero-main-picture {
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
 
-  z-index: 101;
-}
 
 .hero-title {
  padding-top: 128px;
