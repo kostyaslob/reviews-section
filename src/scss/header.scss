@@ -140,6 +140,20 @@ border: none;
 }
 
 
+[data-mobile-menu][data-menu-open="true"] {
+  display: block; 
+}
+
+
+[data-modal-window="true"][data-modal-open="true"] {
+  display: flex; 
+}
+
+body[data-modal-body="true"] {
+  overflow: hidden; 
+}
+
+
 
 .mobile-menu {
   position: fixed; 
@@ -230,7 +244,9 @@ max-width: 720px;
 
    justify-content: space-between;
     text-align: center;
-    background-color: transparent;
+    // background-color: rgba(0, 36, 52, 0.8);
+ backdrop-filter: blur(50px);
+
     
 
 
@@ -239,6 +255,7 @@ max-width: 720px;
     padding-top: 10px;
     padding-bottom: 10px;
            background-image: url('../img/hero/Header.jpg');
+         background-color: rgba(0, 36, 52, 0.8); /* #002434 з прозорістю 0.8 */
            background-size: 1200px 80px;
            background-repeat: no-repeat;
            background-position: center;

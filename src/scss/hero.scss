@@ -9,6 +9,7 @@
 
 .hero-container {
   
+  max-width: 320px;
   min-height: 384px;
   margin: 0 auto;
   width: 100%;
@@ -30,7 +31,6 @@ padding: 0;
 
 
 .hero-content-container {
-  
 background-image:  url("../img/hero/hero-mob.png"),
   
   url("../img/hero/RED-LIGHTNING-mob.png"), 
@@ -90,8 +90,8 @@ font-family: "Bangers", sans-serif;
   margin-bottom: 16px;
   
 
-
 }
+
 .hero-button {
   width: 240px;
   height: 44px;
@@ -108,7 +108,7 @@ justify-content: center;
 .hero-button:active {
   background-color: #39b4f7;
   border: 1.09px solid #376deb;
- transform: scale(1.3);
+ transform: scale(1.1);
 }
 
 
