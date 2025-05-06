@@ -1,7 +1,4 @@
-.container {
-  width: 288px;
-  padding: 0 16px;
-}
+
 .icon-terms{
   stroke-width: 2px;
 stroke: #fff;
@@ -15,6 +12,8 @@ margin-bottom: -4px;
   justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
+  width:288px;
+  padding: 0 16px;
 }
 .terms-back-link {
   display: block;
@@ -80,13 +79,14 @@ margin-bottom: -4px;
 // width: 20px;
 // height: 20px;
 // }
-.container {
-    width: 1200px;
-  padding: 0 40px;
-}
+
 .terms-title {
     font-size: 60px;
 white-space: nowrap;
+}
+.terms-container{
+  width: 1120px;
+  padding: 0 40px;
 }
 .terms-data {
      width: 1120px;
