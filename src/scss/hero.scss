@@ -3,19 +3,35 @@
   padding-top: 0;
   padding-bottom: 0;
   
-margin: 0 auto;
- 
 }
 
 
 
 .hero-container {
-  min-height: 384px;
   
-width: 100%;
-
+  min-height: 384px;
+  margin: 0 auto;
+  width: 100%;
+padding: 0;
   background-image: 
-  url("../img/hero/hero-mob.png"),
+ 
+     url("../img/hero/sandstorm-BG-mob.png"),
+   url('../img/hero/sandstorm-BG-blur-mob.png');
+  background-position: 
+  
+   top,
+  center;
+   
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat;
+  background-size:  100% 40%, 100% 100%;
+  
+}
+
+
+
+.hero-content-container {
+  
+background-image:  url("../img/hero/hero-mob.png"),
   
   url("../img/hero/RED-LIGHTNING-mob.png"), 
   url("../img/hero/stroke-mob.png"),
@@ -27,11 +43,9 @@ width: 100%;
   url('../img/hero/tower-red-mob.png'), 
   url('../img/hero/tower-yellow-mob.png'),
    url("../img/hero/tumbleweed01-mob.png"),
-    url('../img/hero/tumbleweed02-mob.png'),
-     url("../img/hero/sandstorm-BG-mob.png"),
-   url('../img/hero/sandstorm-BG-blur-mob.png');
-  background-position: 
-  top 0px left 95px,
+    url('../img/hero/tumbleweed02-mob.png');
+    background-position: 
+    top 0px left 95px,
   
   top 77px left 163.08px , 
    top 122px left 4px,
@@ -42,19 +56,11 @@ width: 100%;
   top 45.07px left 211.47px , 
   top 36px left 47.73px ,
    top 66.4px left 18.13px , 
-   top 66.4px left 286.13px,
-   top,
-  center;
-   
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat;
-  background-size:  auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto;
-  
-}
+   top 66.4px left 286.13px;
 
+background-repeat: no-repeat;
+background-size: auto;
 
-
-
-.hero-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,29 +120,12 @@ justify-content: center;
    min-height: 720px;
     max-width: 1200px;
   background-image: 
-  url("../img/hero/hero-desk.png"),
-  url("../img/hero/RED-LIGHTNING-desk.png"), 
-url("../img/hero/stroke-desk.png"),
-url("../img/hero/bg-sandstorm-desk.png"),
-  url('../img/hero/lightning-ring-desk.png'), 
-  url('../img/hero/tower-red-desk.png'), 
-  url('../img/hero/tower-yellow-desk.png'), 
-  url("../img/hero/tumbleweed01-desk.png"), 
-  url('../img/hero/tumbleweed02-desk.png'),
+  
    url("../img/hero/sandstorm-BG-desk.png"),
     url("../img/hero/sandstorm-BG-blur-desk.jpg"); 
 
   background-position:
-  top 0px left 354px,
-  top 279.96px left 611.79px,
-  top 440px left 0px,
-  top 435px left -3px,
   
-  top 100px left 175px,
-  top 160px left 793.07px,
-  top 126px left 179px,
-  top 240px left 68px,
-  top 240px left 1073px,
   top,
   center;
 
@@ -145,10 +134,28 @@ url("../img/hero/bg-sandstorm-desk.png"),
 
    
   }
-  .hero-main-picture {
-    top: 40px;
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 96%); 
-}
+  .hero-content-container {
+    background-image: url("../img/hero/hero-desk.png"),
+  url("../img/hero/RED-LIGHTNING-desk.png"), 
+url("../img/hero/stroke-desk.png"),
+url("../img/hero/bg-sandstorm-desk.png"),
+  url('../img/hero/lightning-ring-desk.png'), 
+  url('../img/hero/tower-red-desk.png'), 
+  url('../img/hero/tower-yellow-desk.png'), 
+  url("../img/hero/tumbleweed01-desk.png"), 
+  url('../img/hero/tumbleweed02-desk.png');
+background-position: top 0px left 354px,
+  top 279.96px left 611.79px,
+  top 440px left 0px,
+  top 435px left -3px,
+  
+  top 100px left 175px,
+  top 160px left 793.07px,
+  top 126px left 179px,
+  top 240px left 68px,
+  top 240px left 1073px;
+  background-size: auto;
+  }
   
   
   .hero-title {
