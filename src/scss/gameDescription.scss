@@ -1,0 +1,122 @@
+.game-description-section {
+    padding-top: 0;
+}
+.game-desk-container {
+max-width: 320px;
+
+background-image: 
+
+url("../img/gameDescription/Title.png"),
+
+url('../img/gameDescription/lightning-left-mob.png'),
+url('../img/gameDescription/lightning-right-mob.png'),
+url('../img/gameDescription/main-mashine-mob.png'),
+
+
+url('../img/gameDescription/weapon-mob.png'),
+url('../img/gameDescription/main-hero-mob.png'),
+
+url("../img/gameDescription/tower-blue-mob.png"),
+url("../img/gameDescription/tower-yellow-mob.png"),
+url("../img/gameDescription/tower-red-mob.png"),
+url("../img/gameDescription/lightning-ring-mob.png"),
+
+url("../img/gameDescription/monsters-mob.png"),
+url("../img/gameDescription/path-mob.png"),
+
+url("../img/gameDescription/planet-mob.png"),
+
+url("../img/gameDescription/dragon-mob.png"),
+
+
+
+url("../img/gameDescription/bg-3-mob.png"),
+url("../img/gameDescription/bg-1-mob.png"),
+url("../img/gameDescription/bg-1-mob.png"),
+url("../img/gameDescription/bg-2-mob.png"),
+url("../img/gameDescription/bg-1-mob.png"),
+url("../img/gameDescription/bg-1-mob.png");
+
+background-size: auto;
+background-repeat: no-repeat;
+background-position: 
+
+top 0px left 0px,
+
+top 680px right 210.35px, 
+top 630.78px left 160.17px,
+top 618px left 73.75px, 
+
+
+top 1030px left 167px,
+top 970px left 40.45px,
+
+top 1375px left 62px,
+top 1325px left 110px,
+top 1370px left 180px,
+top 1310px left 107px,
+
+top 1680px left 0px,
+top 1810px left 21px,
+
+top 2072px left 35px,
+
+
+top 2380px left 15px,
+
+top 2480px left 0px,
+top 2135px left 0px,
+top 1780px left 0px,
+top 1425px left 0px,
+top 1070px left 0px,
+top 715px left 0px;
+}
+.game-desk-title {
+    font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+text-align: center;
+margin-bottom: 46px;
+padding-top: 22px;
+}
+.game-desk-span {
+    font-weight: 400;
+font-size: 36px;
+line-height: 110%;
+font-family: "Bangers";
+}
+.game-desk-subtitle {
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+margin-bottom: 24px;
+}
+.game-desk-advantages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 208px;
+}
+.game-desk-item {
+    background-color: rgba(37, 63, 88, 0.8);
+    padding: 8px 16px;
+  width: 320px;
+height: 147px;
+
+}
+
+
+
+.game-desk-item:last-child {
+    margin-bottom: 184px;
+}
+.game-desk-heading {
+    font-weight: 500;
+font-size: 20px;
+line-height: 140%;
+}
+.game-desk-subheading {
+    font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+}
