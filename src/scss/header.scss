@@ -154,7 +154,11 @@ body[data-modal-body="true"] {
 }
 
 
-
+.header-button[data-button-active="true"] {
+  background-color: #39b4f7;
+  border: 1.09px solid #376deb;
+  transform: scale(1.2);
+}
 .mobile-menu {
   position: fixed; 
   top: 0;
@@ -210,7 +214,6 @@ width: 161px;
     background-image: url("../img/hero/stroke-cookie-desk.png"),
     url("../img/hero/bg-sandstorm-cookie-desk.png");
     background-position: top 501px left 4px, top 497px left 0px;
-    background-size: 100%;
     
   }
   .header-modal-title {
@@ -245,6 +248,8 @@ max-width: 720px;
 
    justify-content: space-between;
     text-align: center;
+//     background-color: rgba(0, 36, 52, 0.8);
+//  backdrop-filter: blur(50px);
 
     
 
@@ -253,12 +258,11 @@ max-width: 720px;
 .header-section {
     padding-top: 10px;
     padding-bottom: 10px;
-          //  background-image: url('../img/hero/Header.jpg');
-    background-color: rgba(0, 36, 52, 0.8);
          
-           background-size: 1200px 80px;
-           background-repeat: no-repeat;
-           background-position: center;
+         background-color: rgba(0, 36, 52, 0.8); 
+          //  background-size: 1200px 80px;
+          //  background-repeat: no-repeat;
+          //  background-position: center;
 
 
 }
