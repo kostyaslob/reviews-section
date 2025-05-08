@@ -1,0 +1,106 @@
+// mobile styles
+.gallery-container {
+  width: 320px;
+  height: 995px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/heroUpdateTree/Title-mob.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0 auto;
+}
+.swiper-wrapper{
+     display: flex;
+    flex-direction: column;
+    padding-top: 24px; 
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-gallery {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  padding-top: 22px;
+  margin-bottom: 24px;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px; /* Відступ вниз під слайдом */
+}
+
+.left-btn, .right-btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+#icon-swiper-left,
+#icon-swiper-right{
+    fill: rgba(57, 180, 247, 0.2);
+stroke-width: 1px;
+stroke: rgba(55, 109, 235, 0.3);
+}
+.left-btn {
+  margin-right: 16px; /* Відступ між кнопками */
+}
+
+.right-btn {
+  margin-left: 16px;
+}
+.swiper-pagination{
+    display: none;
+}
+
+// .gallery-container {
+// //   position: relative;
+//   max-width: 1120px;
+//   margin: 0 auto; /* Центрування */
+// }
+
+// #icon-swiper-left {
+//   width: 35px;
+//   height: 38px;
+//   left: 24px;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #icon-swiper-right{
+//   width: 35px;
+//   height: 38px;
+// right: 24px;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+// .swiper-wrapper{
+//     display: flex;
+//     flex-direction: row;
+//     gap: 24px;
+// }
+
+// .swiper-slide {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 24px;
+// }
+// .swiper-pagination{
+//     display: none;
+// }
