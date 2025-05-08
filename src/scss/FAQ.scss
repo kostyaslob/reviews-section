@@ -1,0 +1,94 @@
+.faq-section {
+    padding-top: 0;
+}
+.faq-container {
+  margin: 0 auto;
+  max-width: 320px;
+  min-height: 600px;
+  padding: 0;
+  background-image: url("../img/FAQ/Title-mob.png"),
+  url("../img/FAQ/thing-mob.png"),
+  url("../img/FAQ/tumbleweed-mob.png"),
+  url("../img/FAQ/bg-mob.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 
+  top 0px left 0px,
+  top 450px left 205px,
+  top 490px left 10px,
+  top 320px left 0px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+[data-accordion-item][data-active="true"] [data-accordion-content] {
+  width: 272px;
+  height: 163px;
+}
+
+[data-accordion-item][data-active="true"] .accordion-header {
+  margin-bottom: 16px;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(37, 63, 88, 0.8);
+  padding: 16px;
+  margin-bottom: 90px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #fff;
+  padding: 0px 0px 16px 0px;
+  
+}
+
+.accordion-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.faq-title {
+  padding-top: 22px;
+  margin-bottom: 46px;
+  text-align: center;
+  font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+}
+.faq-span {
+    font-weight: 400;
+font-size: 36px;
+font-family: "Bangers"; 
+line-height: 110%;
+}
+
+.icon-accordeon {
+  fill: white;
+   flex-shrink: 0;
+  margin-left: 20px;
+}
+.icon-accordeon-second {
+    fill: white;
+   flex-shrink: 0;
+  margin-left: 83px;
+}
