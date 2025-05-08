@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeBtn = document.querySelector('[data-close-btn]');
   const mobileMenu = document.querySelector('[data-mobile-menu]');
   const linksToClose = document.querySelectorAll('[data-close-on-click]');
-  const body = document.querySelector('[data-element="body"]');
+  const body = document.querySelector('[data-body]');
 
   openBtn?.addEventListener('click', () => {
     mobileMenu?.setAttribute('data-menu-open', 'true');
@@ -66,3 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+
+
+
+
+

@@ -1,6 +1,10 @@
 body {
   padding-top: 80px; 
 }
+
+
+
+
 .header-section {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -140,17 +144,17 @@ border: none;
 }
 
 
-[data-mobile-menu][data-menu-open="true"] {
-  display: block; 
-}
 
+body[data-modal-open="true"] { 
+  overflow: hidden;
+}
 
 [data-modal-window="true"][data-modal-open="true"] {
-  display: flex; 
+  display: flex;
 }
 
-body[data-modal-body="true"] {
-  overflow: hidden; 
+[data-mobile-menu][data-menu-open="true"] { 
+  display: block;
 }
 
 
@@ -202,6 +206,10 @@ width: 161px;
 }
 
 @media (min-width: 1200px) {
+
+  .mobile-menu {
+    display: none;
+  }
   .header-modal{
     max-width: 1200px;
     
