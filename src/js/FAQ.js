@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
       const item = button.closest('[data-accordion-item]');
       const content = item.querySelector('[data-accordion-content]');
-      const icon = button.querySelector('.icon-accordeon');
+      const icon = button.querySelector('[data-icon]');
 
       const isActive = item.dataset.active === 'true';
 
