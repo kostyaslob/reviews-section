@@ -39,3 +39,30 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const openBtn = document.querySelector('[data-open-btn]');
+  const closeBtn = document.querySelector('[data-close-btn]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  const linksToClose = document.querySelectorAll('[data-close-on-click]');
+  const body = document.querySelector('[data-element="body"]');
+
+  openBtn?.addEventListener('click', () => {
+    mobileMenu?.setAttribute('data-menu-open', 'true');
+    body?.setAttribute('data-modal-open', 'true');
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    mobileMenu?.removeAttribute('data-menu-open');
+    body?.removeAttribute('data-modal-open');
+  });
+
+  linksToClose.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.removeAttribute('data-menu-open');
+      body?.removeAttribute('data-modal-open');
+    });
+  });
+});
