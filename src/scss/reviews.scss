@@ -1,0 +1,104 @@
+.swiper-testimonials {
+  background-color: lightcoral;
+}
+
+.swiper-container {
+  width: 320px;
+  height: auto;
+  padding: 16px;
+  background: url(/img/heroUpdateTree/Title-mob.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    padding-top: 8px;
+    margin-bottom: 44px;
+  }
+}
+
+.reviews-span {
+  font-family: 'Bangers', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.swiper-review-card {
+  position: relative;
+  padding-top: 83px;
+}
+
+.swiper-image-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-review-content {
+  padding: 69px 24px 24px 24px;
+  background: #002434;
+  text-align: center;
+  position: relative;
+}
+
+.swiper-review-content::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px solid #fdb115;
+  pointer-events: none;
+}
+
+.swiper-review-content {
+}
+.swiper-reviewer-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.swiper-star-rating {
+}
+.swiper-review-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.reviews-arrows {
+  display: flex;
+  gap: 34px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reviews-arrows-prev,
+.reviews-arrows-next {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.reviews-arrows-icon {
+  fill: rgba(57, 180, 247, 0.2);
+    stroke-width: 1px;
+    stroke: rgba(55, 109, 235, 0.3);
+}
