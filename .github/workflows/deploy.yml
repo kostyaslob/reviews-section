@@ -16,6 +16,11 @@ jobs:
           npm install
           npm run build
 
+      - name: Show dist content 📂
+        run: |
+          ls -la
+          ls -la dist  # Виведе вміст папки dist, якщо вона існує
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
