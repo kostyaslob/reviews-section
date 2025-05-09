@@ -1,38 +1,26 @@
-// mobile styles
 .gallery-container {
   width: 320px;
-  height: 995px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: auto;
+ padding: 16px;
   background: url(../img/heroUpdateTree/Title-mob.png);
   background-repeat: no-repeat;
   background-size: auto;
-  margin: 0 auto;
 }
-.swiper-wrapper{
-     display: flex;
-    flex-direction: column;
-    padding-top: 24px; 
-}
-
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .title-gallery {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
   color: #fff;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 8px;
   margin-bottom: 24px;
+}
+.gallery-span{
+  font-family: "Bangers", sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.1;
+color: #fff;
 }
 
 .navigation-container {
@@ -69,38 +57,89 @@ stroke: rgba(55, 109, 235, 0.3);
     display: none;
 }
 
-// .gallery-container {
-// //   position: relative;
-//   max-width: 1120px;
-//   margin: 0 auto; /* Центрування */
-// }
+.image-container {
+  margin-bottom: 16px;
+}
+#gallery-style {
+  padding-top: 20px;
+ 
+}
 
-// #icon-swiper-left {
-//   width: 35px;
-//   height: 38px;
-//   left: 24px;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
+@media (min-width: 1200px){
+  .gallery-container{
+    width: 1200px;
+    background: url(../img/heroUpdateTree/Title-desk.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .title-gallery{
+    font-size: 36px;
+  }
+  .left-btn {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+  }
+  .image-container{
+    width: 1120px;
+    height: auto;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 24px;
+width: 1120px;
+height: auto;
+justify-content: center;
+text-align: center;
+margin: 0 auto;
 
-// #icon-swiper-right{
-//   width: 35px;
-//   height: 38px;
-// right: 24px;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-// .swiper-wrapper{
-//     display: flex;
-//     flex-direction: row;
-//     gap: 24px;
-// }
+  }
+  .navigation-container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 24px;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .left-btn,
+  .right-btn {
+    position: static; /* вже позиціонуються через контейнер */
+  }
+  .swiper {
+  width: 100%;
+  overflow: hidden;
+}
 
-// .swiper-slide {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 24px;
-// }
-// .swiper-pagination{
-//     display: none;
-// }
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 50%; /* буде переписано Swiper'ом при breakpoints */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* центрірування зображень */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+}
