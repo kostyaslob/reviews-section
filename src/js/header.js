@@ -31,3 +31,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.querySelector('[data-modal-window="true"]');
+  const acceptButton = document.querySelector('[data-accept-cookies="true"]');
+  const declineButton = document.querySelector('[data-decline-cookies="true"]');
+
+  const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+
+  if (!cookiesAccepted) {
+    modal.setAttribute('data-modal-open', 'true');
+    document.body.setAttribute('data-modal-body', 'true');
+  }
+
+  acceptButton.addEventListener('click', function () {
+    localStorage.setItem('cookiesAccepted', 'true');
+    modal.removeAttribute('data-modal-open');
+    document.body.removeAttribute('data-modal-body');
+  });
+
+  declineButton.addEventListener('click', function () {
+    localStorage.setItem('cookiesAccepted', 'false');
+    modal.removeAttribute('data-modal-open');
+  });
+});
+
+
+
+
